@@ -1,0 +1,4 @@
+.sh { display: flex; flex-direction: column; gap: 16px; margin-bottom: 56px; max-width: 680px; }
+.sh--center { align-items: center; text-align: center; margin-inline: auto; }
+.sh--left { align-items: flex-start; }
+.sh p { font-size: 1.05rem; }

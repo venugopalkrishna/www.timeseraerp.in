@@ -1,0 +1,27 @@
+.form-card { background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow-md); }
+form { display: grid; gap: 18px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+.field { display: grid; gap: 7px; position: relative; }
+.field span { font-size: 0.82rem; font-weight: 700; color: var(--navy-950); }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 13px 16px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--bg);
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s; resize: vertical;
+}
+.field input:hover, .field select:hover, .field textarea:hover { border-color: var(--navy-100); }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--mint); background: #fff; box-shadow: 0 0 0 4px rgba(82, 189, 145, 0.18); }
+.field--error input { border-color: #d6455d; }
+.field em { font-size: 0.78rem; font-style: normal; color: #d6455d; }
+.form-submit {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px; border-radius: 999px; font-weight: 700;
+  background: var(--navy); color: #fff; box-shadow: 0 8px 20px rgba(28, 16, 120, 0.25); transition: transform 0.35s var(--ease), background 0.3s;
+}
+.form-submit:hover { background: var(--navy-500); transform: translateY(-2px); }
+.form-submit:hover svg { transform: translate(3px, -3px); }
+.form-submit svg { transition: transform 0.3s; }
+.form-submit:disabled { opacity: 0.7; pointer-events: none; }
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.form-done { text-align: center; padding: 40px 10px; display: grid; gap: 12px; justify-items: center; }
+.form-done svg { color: var(--mint-600); }
+.form-done__again { margin-top: 8px; font-weight: 600; color: var(--navy); border-bottom: 2px solid var(--mint); }
