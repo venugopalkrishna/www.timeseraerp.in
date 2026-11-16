@@ -1,0 +1,10 @@
+.logo { display: inline-flex; align-items: center; gap: 12px; transition: transform 0.35s var(--ease); }
+.logo:hover { transform: translateY(-1px); }
+.logo:hover svg { transform: rotate(-6deg); }
+.logo svg { transition: transform 0.4s var(--ease); }
+.logo__word { font-weight: 800; font-size: 1.15rem; letter-spacing: 0.06em; color: var(--navy); display: inline-flex; align-items: baseline; gap: 0; }
+.logo__word b { font-size: 1.45rem; font-weight: 800; }
+.logo__word i { font-style: normal; color: var(--mint-600); }
+.logo__word small { font-size: 0.55rem; margin-left: 6px; letter-spacing: 0.12em; color: var(--mint-600); align-self: flex-end; padding-bottom: 3px; }
+.logo--light .logo__word { color: #fff; }
+.logo--light .logo__word i, .logo--light .logo__word small { color: var(--mint); }

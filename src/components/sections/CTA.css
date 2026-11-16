@@ -1,0 +1,10 @@
+.cta-wrap { padding-top: 0; }
+.cta { position: relative; overflow: hidden; text-align: center; padding: clamp(56px, 8vw, 96px) 24px; border-radius: 32px; color: #fff;
+  background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy) 55%, var(--navy-500) 100%); box-shadow: var(--shadow-lg); }
+.cta h2 { color: #fff; max-width: 680px; margin: 0 auto 16px; position: relative; }
+.cta h2 em { color: var(--mint); }
+.cta p { color: rgba(255, 255, 255, 0.75); max-width: 460px; margin: 0 auto 32px; position: relative; }
+.cta__buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; }
+.cta__orb { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; }
+.cta__orb--1 { width: 340px; height: 340px; background: rgba(82, 189, 145, 0.35); top: -120px; right: -60px; }
+.cta__orb--2 { width: 280px; height: 280px; background: rgba(120, 100, 255, 0.28); bottom: -120px; left: -40px; }

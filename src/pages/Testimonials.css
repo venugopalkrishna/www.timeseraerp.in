@@ -1,0 +1,9 @@
+.reviews { columns: 3 320px; column-gap: 22px; }
+.reviews__item { break-inside: avoid; margin-bottom: 22px; }
+.review { display: grid; gap: 16px; }
+.review__stars { display: flex; gap: 2px; color: var(--mint-600); }
+.review p { color: var(--navy-950); font-weight: 500; }
+.review__who { display: flex; align-items: center; gap: 12px; }
+.review__who span { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--navy); color: var(--mint); font-weight: 800; }
+.review__who strong { display: block; line-height: 1.2; color: var(--navy-950); }
+.review__who small { color: var(--muted); }

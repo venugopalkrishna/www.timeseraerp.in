@@ -1,0 +1,27 @@
+.svc { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 32px; align-items: start; }
+.svc__tabs { display: grid; gap: 10px; }
+.svc__tab { position: relative; display: flex; align-items: center; gap: 16px; padding: 14px 18px; border-radius: 18px; text-align: left; border: 1px solid var(--line); background: #fff; transition: transform 0.35s var(--ease), border-color 0.3s; }
+.svc__tab:hover { transform: translateX(6px); border-color: var(--mint); }
+.svc__tab-bg { position: absolute; inset: 0; border-radius: 18px; background: var(--navy-950); z-index: 0; }
+.svc__tab > *:not(.svc__tab-bg) { position: relative; z-index: 1; }
+.svc__tab-num { font-family: var(--font-display); color: var(--navy-500); width: 26px; }
+.svc__tab-title { font-weight: 700; color: var(--navy-950); transition: color 0.3s; }
+.svc__tab.is-active .svc__tab-title { color: #fff; }
+.svc__tab.is-active .svc__tab-num { color: var(--mint); }
+.svc__tab.is-active .icon-tile { background: var(--mint); color: var(--navy-950); }
+.svc__panel { position: sticky; top: 100px; min-height: 440px; border-radius: 28px; overflow: hidden; background: linear-gradient(150deg, #fff, var(--mint-50)); border: 1px solid var(--line); box-shadow: var(--shadow-md); }
+.svc__content { padding: clamp(28px, 4vw, 48px); display: grid; gap: 18px; justify-items: start; }
+.svc__bigicon { width: 84px; height: 84px; border-radius: 24px; display: grid; place-items: center; background: var(--navy); color: var(--mint); animation: bob 5s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(-8px) rotate(-4deg); } }
+.svc__content p { font-size: 1.05rem; max-width: 460px; }
+.svc__content ul { list-style: none; padding: 0; display: grid; gap: 12px; margin-bottom: 8px; }
+.svc__content li { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--navy-950); }
+.svc__content li span { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--mint); color: var(--navy-950); }
+@media (max-width: 900px) { .svc { grid-template-columns: 1fr; } .svc__panel { position: static; min-height: 0; } }
+
+.caps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.cap { padding: 22px 14px; display: grid; justify-items: center; gap: 12px; text-align: center; }
+.cap h3 { font-size: 0.86rem; }
+@media (max-width: 1100px) { .caps { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 760px) { .caps { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .caps { grid-template-columns: repeat(2, 1fr); } }
